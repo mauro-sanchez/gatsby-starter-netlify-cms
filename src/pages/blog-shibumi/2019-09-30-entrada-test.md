@@ -1,5 +1,5 @@
 ---
-templateKey: blog.post-shibumi
+templateKey: blog-post-shibumi
 title: Entrada test
 date: 2019-09-30T03:30:12.418Z
 description: Este es un test de segundo blog

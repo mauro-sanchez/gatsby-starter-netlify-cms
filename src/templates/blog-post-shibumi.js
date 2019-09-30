@@ -85,10 +85,10 @@ BlogPostShibumi.propTypes = {
   }),
 }
 
-export default BlogPost
+export default BlogPostShibumi
 
 export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
+  query BlogPostShibumiByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html

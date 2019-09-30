@@ -44,10 +44,10 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "conferencias"}
-      - {label: "Lugar", name: "lugar", widget: "string"}
-      - {label: "Tema", name: "tema", widget: "string"}
-      - {label: "Fecha de conferencia", name: "fecha-conferencia", widget: "datetime"}
+      - {label: "Tema", name: "title", widget: "string"}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
+      - {label: "Lugar", name: "lugar", widget: "string"}
+      - {label: "Fecha de conferencia", name: "fecha-conferencia", widget: "datetime"}
       - {label: "Descripción", name: "description", widget: "text"}
       - {label: "Conferencista", name: "conferencista", widget: "string"}
       - {label: "Imagen destacada", name: "featuredimage", widget: image}

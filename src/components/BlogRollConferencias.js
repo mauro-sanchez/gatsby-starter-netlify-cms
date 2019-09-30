@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
-class BlogRollShibumi extends React.Component {
+class BlogRollConferencias extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -58,7 +58,7 @@ class BlogRollShibumi extends React.Component {
   }
 }
 
-BlogRollShibumi.propTypes = {
+BlogRollConferencias.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -69,10 +69,10 @@ BlogRollShibumi.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query BlogRollShibumiQuery {
+      query BlogRollConferenciasQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "blog-post-shibumi" } } }
+          filter: { frontmatter: { templateKey: { eq: "conferencias" } } }
         ) {
           edges {
             node {
@@ -102,6 +102,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <BlogRollShibumi data={data} count={count} />}
+    render={(data, count) => <BlogRollConferencias data={data} count={count} />}
   />
 )

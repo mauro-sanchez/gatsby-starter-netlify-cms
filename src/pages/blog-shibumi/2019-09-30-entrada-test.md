@@ -8,8 +8,14 @@ featuredimage: /img/seguro-auto-coberturas.png
 tags:
   - Shibumi
 ---
+
+
 Este es un test
 
 ![Test](/img/seguro-auto-coberturas.png "Un choque feo")
 
 Continuación del test
+
+![Café](/img/products-grid2.jpg "Test")
+
+Continuación de continuación

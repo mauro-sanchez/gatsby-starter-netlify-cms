@@ -6,7 +6,6 @@ link: '#'
 description: Curso test
 tags:
   - curso
+attachment: /img/el-chupacabras-de-pirque.-pepe-pelayo-betán.pdf
 ---
 CursoTest
-
-![Test](/img/el-chupacabras-de-pirque.-pepe-pelayo-betán.pdf "Test")

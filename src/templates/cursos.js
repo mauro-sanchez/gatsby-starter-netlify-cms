@@ -27,7 +27,7 @@ export const CursosTemplate = ({
             </h1>
             <p>{description}</p>
             <strong>
-              <a href={link} target="_blank">Link al curso</a>
+              <a href={link} target="_blank" rel="noopener noreferrer">Link al curso</a>
             </strong>
             <PostContent content={content} />
             {tags && tags.length ? (

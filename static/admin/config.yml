@@ -67,7 +67,13 @@ collections:
       - {label: "Descripción", name: "description", widget: "text"}
       - {label: "Cuerpo", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-
+      - label: "Archivo" 
+        name: "attachment" 
+        widget: "file" 
+        media_library: 
+          config: 
+            multiple: true
+            
   - name: "pages"
     label: "Pages"
     files:

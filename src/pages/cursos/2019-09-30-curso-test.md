@@ -8,3 +8,5 @@ tags:
   - curso
 ---
 CursoTest
+
+![Test](/img/el-chupacabras-de-pirque.-pepe-pelayo-betán.pdf "Test")

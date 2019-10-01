@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from "react";
+import PropTypes from "prop-types";
+import { kebabCase } from "lodash";
+import Helmet from "react-helmet";
+import { graphql, Link } from "gatsby";
+import Layout from "../components/Layout";
+import Content, { HTMLContent } from "../components/Content";
 
 export const CursosTemplate = ({
   content,
@@ -15,11 +15,10 @@ export const CursosTemplate = ({
   helmet,
   link
 }) => {
-  const PostContent = contentComponent || Content
-
+  const PostContent = contentComponent || Content;
   return (
     <section className="section">
-      {helmet || ''}
+      {helmet || ""}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -27,7 +26,9 @@ export const CursosTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
-            <p><strong>link:  </strong>{link}</p>
+            <strong>
+              <a href={link} target="_blank">Link al curso</a>
+            </strong>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -45,8 +46,8 @@ export const CursosTemplate = ({
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 CursosTemplate.propTypes = {
   content: PropTypes.node.isRequired,
@@ -55,10 +56,10 @@ CursosTemplate.propTypes = {
   title: PropTypes.string,
   helmet: PropTypes.object,
   link: PropTypes.string
-}
+};
 
 const Cursos = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
@@ -67,7 +68,7 @@ const Cursos = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="%s | Curso">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
@@ -80,16 +81,16 @@ const Cursos = ({ data }) => {
         link={post.frontmatter.link}
       />
     </Layout>
-  )
-}
+  );
+};
 
 Cursos.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-}
+    markdownRemark: PropTypes.object
+  })
+};
 
-export default Cursos
+export default Cursos;
 
 export const pageQuery = graphql`
   query CursosByID($id: String!) {
@@ -105,4 +106,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

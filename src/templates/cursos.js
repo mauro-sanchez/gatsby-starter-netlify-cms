@@ -13,7 +13,8 @@ export const CursosTemplate = ({
   tags,
   title,
   helmet,
-  link
+  link,
+  attachment
 }) => {
   const PostContent = contentComponent || Content;
   return (
@@ -30,6 +31,9 @@ export const CursosTemplate = ({
               <a href={link} target="_blank" rel="noopener noreferrer">Link al curso</a>
             </strong>
             <PostContent content={content} />
+            <strong>
+              <a href={attachment.publicURL} target="_blank" rel="noopener noreferrer">Link al archivo</a>
+            </strong>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -55,7 +59,8 @@ CursosTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-  link: PropTypes.string
+  link: PropTypes.string,
+  attachment: PropTypes.object
 };
 
 const Cursos = ({ data }) => {
@@ -79,6 +84,7 @@ const Cursos = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         link={post.frontmatter.link}
+        attachment={post.frontmatter.attachment}
       />
     </Layout>
   );
@@ -103,6 +109,9 @@ export const pageQuery = graphql`
         description
         tags
         link
+        attachment {
+          publicURL
+        }
       }
     }
   }

@@ -1,0 +1,9 @@
+
+@media screen and (min-width: 1024px) {
+  .navbar-center {
+    justify-content: flex-start;
+    margin: auto;
+    align-items: stretch;
+    display: flex;
+  }
+}

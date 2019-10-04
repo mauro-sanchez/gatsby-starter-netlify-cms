@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter + Shibumi',
+    title: 'Sochena',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'SOCIEDAD CIENTÍFICA CHILENA DE ENFERMERÍA DEL NIÑO/A  Y  ADOLESCENTE- Red ENSI Chile,'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

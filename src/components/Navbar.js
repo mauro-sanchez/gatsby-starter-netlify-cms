@@ -41,7 +41,7 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">
-            {/* <Link to="/" className="navbar-item" title="Logo">
+            {/* <Link to="/" className="n-item" title="Logo">
               <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
             </Link> */}
             {/* Hamburger menu */}
@@ -60,31 +60,31 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-center has-text-centered">
-              <Link className="navbar-item" to="/">
+              <Link className="n-item" to="/">
                 Inicio
               </Link>
-              <Link className="navbar-item" to="/shibumi">
+              <Link className="n-item" to="/shibumi">
                 Shibumi
               </Link>
-              <Link className="navbar-item" to="/conferencias">
+              <Link className="n-item" to="/conferencias">
                 Conferencias
               </Link>
-              <Link className="navbar-item" to="/blog-shibumi">
+              <Link className="n-item" to="/blog-shibumi">
                 Shibumi Blog
               </Link>
-              <Link className="navbar-item" to="/cursos">
+              <Link className="n-item" to="/cursos">
                 Cursos
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link className="n-item" to="/contact">
                 Contact
               </Link>
-              <Link className="navbar-item" to="/contact/examples">
+              <Link className="n-item" to="/contact/examples">
                 Form Examples
               </Link>
             </div>
             {/* <div className="navbar-end has-text-centered">
               <a
-                className="navbar-item"
+                className="n-item"
                 href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -1,3 +1,32 @@
+a {
+  color: #1E59A8;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar.is-blue {
+  background-color: #1E59A8 !important;
+}
+
+.n-item {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  color: #FFF;
+  line-height: 1.5;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+}
+
+a.n-item {
+  cursor: pointer;
+}
+
+.n-item:hover {
+  background-color: #fafafa;
+  color: #1E59A8;
+  transition: all 400ms linear;
+}
 
 @media screen and (min-width: 1024px) {
   .navbar-center {
@@ -5,5 +34,10 @@
     margin: auto;
     align-items: stretch;
     display: flex;
+  }
+
+  .n-item {
+    display: flex;
+    align-items: center;
   }
 }

@@ -32,7 +32,7 @@ export const CursosTemplate = ({
             </strong>
             <PostContent content={content} />
             <strong>
-              <a href={attachment.publicURL} target="_blank" rel="noopener noreferrer">Link al archivo</a>
+              <a href={attachment && attachment.publicURL} target="_blank" rel="noopener noreferrer">Link al archivo</a>
             </strong>
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>

@@ -36,6 +36,10 @@ a.n-item {
   color: #1E59A8 !important;
 }
 
+.blog-list-item.s-is-featured {
+  background-color: #0099ff33;
+}
+
 @media screen and (min-width: 1024px) {
   .navbar-center {
     justify-content: flex-start;

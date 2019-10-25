@@ -15,7 +15,7 @@ class BlogRollCursos extends React.Component {
             <div className="is-parent column is-6" key={post.id}>
               <article
                 className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
+                  post.frontmatter.featuredpost ? 's-is-featured' : ''
                 }`}
               >
                 <header>

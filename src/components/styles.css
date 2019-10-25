@@ -28,6 +28,14 @@ a.n-item {
   transition: all 400ms linear;
 }
 
+.has-background-blue {
+  background-color: #1E59A8 !important;
+}
+
+.s-has-text-primary {
+  color: #1E59A8 !important;
+}
+
 @media screen and (min-width: 1024px) {
   .navbar-center {
     justify-content: flex-start;

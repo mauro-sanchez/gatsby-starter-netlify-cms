@@ -25,6 +25,9 @@ export default class BlogIndexPage extends React.Component {
             Noticias
           </h1>
         </div>
+        <section className="section has-text-centered">
+          <h2>Si quieres estar enterado de las últimas noticias y actividades más reciente, visítanos en Twitter o Facebook</h2>
+        </section>
         <section className="section">
           <div className="container">
             <div className="content">

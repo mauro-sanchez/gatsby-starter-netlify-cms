@@ -40,6 +40,17 @@ export default class Index extends React.Component {
           <div className="container">
             <div className="content">
               <h1>Contacto</h1>
+              <p>Miraflores 563, Santiago, Chile</p>
+              <p>Fono: +56223641976 ( Regional Santiago. Colegio de Enfermeras de Chile)</p>
+              <p><a href="mailto:contacto@sochena.cl">contacto@sochena.cl</a></p>
+              <p><a href="mailto:info.sochena@gmail.com">info.sochena@gmail.com</a></p>
+            </div>
+          </div>
+        </section>
+        <section className="section">
+          <div className="container">
+            <div className="content">
+              <h1>O envíanos un mensaje</h1>
               <form
                 name="contact"
                 method="post"

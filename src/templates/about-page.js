@@ -34,22 +34,22 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
                 </h2>
                 <div className="s-society">
                   <div className="s-society-item">
-                    <a href={historia} download>
+                    <a href={historia} download="historia.pdf">
                       <img src={imgHistoria} />
                     </a>
                   </div>
                   <div className="s-society-item">
-                    <a href={objetivos} download>
+                    <a href={objetivos} download="objetivos.pdf">
                       <img src={imgObjetivos} />
                     </a>
                   </div>
                   <div className="s-society-item">
-                    <a href={estatutos} download>
+                    <a href={estatutos} download="estatutos.pdf">
                       <img src={imgEstatutos} />
                     </a>
                   </div>
                   <div className="s-society-item">
-                    <a href={directorio} download>
+                    <a href={directorio} download="directorio.pdf">
                       <img src={imgDirectorio} />
                     </a>
                   </div>

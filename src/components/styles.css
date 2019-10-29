@@ -42,6 +42,8 @@ a.n-item {
 
 .s-society {
   display: flex;
+  justify-content: center;
+  
 }
 
 @media screen and (min-width: 1024px) {

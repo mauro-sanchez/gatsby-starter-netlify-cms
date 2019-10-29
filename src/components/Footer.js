@@ -3,9 +3,7 @@ import { Link } from 'gatsby'
 
 import logo from '../img/1369.png'
 import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
 
 const Footer = class extends React.Component {
   render() {
@@ -30,7 +28,7 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/">
+                      <Link className="navbar-item" to="/about">
                         Sociedad
                       </Link>
                     </li>

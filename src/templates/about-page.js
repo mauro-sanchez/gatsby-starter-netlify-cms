@@ -27,10 +27,6 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
                 </h2>
                 <PageContent className="content" content={content} />
               </div>
-            </div>
-          </div>
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
               <div className="section has-text-centered">
                 <h2 className="title is-size-4 has-text-weight-bold id-bold-light">
                   Clic sobre cada ícono para acceder al archivo PDF

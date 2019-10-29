@@ -16,45 +16,54 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <PageContent className="content" content={content} />
+    <React.Fragment>
+      <section className="section section--gradient">
+        <div className="container">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="section">
+                <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                  {title}
+                </h2>
+                <PageContent className="content" content={content} />
+              </div>
+            </div>
+          </div>
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div className="section has-text-centered">
+                <h2 className="title is-size-4 has-text-weight-bold id-bold-light">
+                  Clic sobre cada ícono para acceder al archivo PDF
+                  correspondiente
+                </h2>
+                <div className="s-society">
+                  <div className="s-society-item">
+                    <a href={historia} download>
+                      <img src={imgHistoria} />
+                    </a>
+                  </div>
+                  <div className="s-society-item">
+                    <a href={objetivos} download>
+                      <img src={imgObjetivos} />
+                    </a>
+                  </div>
+                  <div className="s-society-item">
+                    <a href={estatutos} download>
+                      <img src={imgEstatutos} />
+                    </a>
+                  </div>
+                  <div className="s-society-item">
+                    <a href={directorio} download>
+                      <img src={imgDirectorio} />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div className="columns">
-          <div className="column">
-            Clic sobre cada ícono para acceder al archivo PDF correspondiente
-          </div>
-          <div className="column">
-            <a href={historia} download>
-              <img src={imgHistoria} />
-            </a>
-          </div>
-          <div className="column">
-            <a href={objetivos} download>
-              <img src={imgObjetivos} />
-            </a>
-          </div>
-          <div className="column">
-            <a href={estatutos} download>
-              <img src={imgEstatutos} />
-            </a>
-          </div>
-          <div className="column">
-            <a href={directorio} download>
-              <img src={imgDirectorio} />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </React.Fragment>
   );
 };
 

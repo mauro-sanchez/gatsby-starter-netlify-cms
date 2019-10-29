@@ -40,6 +40,10 @@ a.n-item {
   background-color: #0099ff33;
 }
 
+.s-society {
+  display: flex;
+}
+
 @media screen and (min-width: 1024px) {
   .navbar-center {
     justify-content: flex-start;
